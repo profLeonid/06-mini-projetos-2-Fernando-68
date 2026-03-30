@@ -14,21 +14,22 @@ const numerosPares = function(quantidade){
         if(i % 2 === 0){
            listaPar.push(i)
         }
-       
     }
+    return listaPar
 }
 
 const numerosImpares = function(quantidade){
     let listaImpar = []
     for(let i = 1; i <= quantidade; i++){
-        if(i % 1 === 0){
+        if(i % 2 !== 0){
             listaImpar.push(i)
         }
     }
+    return listaImpar
 }
 
 const criarLinha = function(num, par, impar, mult5, pot2){
     
 }
-console.log(numerosPares(10))
+console.log(numerosImpares(10))
 //console.log(criarListaNumeros)
